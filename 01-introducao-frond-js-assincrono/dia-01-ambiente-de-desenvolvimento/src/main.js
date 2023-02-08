@@ -13,6 +13,6 @@ btn.addEventListener('click', (event) => {
     hexColor: validator.isHexColor(text.value),
     url: validator.isURL(text.value),
     fone: validator.isMobilePhone(text.value, 'pt-BR'),
-}
+  };
   saida.innerHTML = `A validação retornou: ${objVerify[select.value]}`;
 });
