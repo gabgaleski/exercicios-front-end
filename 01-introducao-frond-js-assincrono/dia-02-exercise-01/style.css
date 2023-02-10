@@ -1,5 +1,31 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@100;300&display=swap');
+
 body {
   background-color: antiquewhite;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Lobster', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #img {
@@ -11,4 +37,12 @@ body {
     width: 350px;
     height: 470px;
     border: 1px solid black;
+}
+
+#random-btn {
+    width: 80px;
+    height: 45px;
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer;
 }

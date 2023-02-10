@@ -16,6 +16,6 @@ btn.addEventListener('click', () => {
     img.src = image.url;
   })
   .catch((error) => {
-    swal.fire('Erro')
+    swal.fire('Algo deu errado')
   })
 });
