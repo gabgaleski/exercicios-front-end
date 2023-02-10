@@ -1,0 +1,14 @@
+body {
+  background-color: antiquewhite;
+}
+
+#img {
+  width: 350px;
+  height: 470px;
+}
+
+.card {
+    width: 350px;
+    height: 470px;
+    border: 1px solid black;
+}
