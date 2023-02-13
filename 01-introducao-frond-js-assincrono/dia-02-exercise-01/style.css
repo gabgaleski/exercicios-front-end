@@ -1,7 +1,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@100;300&display=swap');
 
 body {
-  background-color: antiquewhite;
+  background: url('./background.jpg');
 }
 
 .main-container {
@@ -19,9 +19,12 @@ h1 {
     text-align: center;
     font-family: 'Lobster', cursive;
     font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: white;
 }
 
 h3 {
+  color: white;
     text-align: center;
     font-size: 23px;
     font-family: 'Lobster', cursive;
@@ -40,9 +43,12 @@ h3 {
 }
 
 #random-btn {
-    width: 80px;
-    height: 45px;
-    font-size: 17px;
-    text-align: center;
-    cursor: pointer;
+  background-color: aliceblue;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 100px;
+  height: 45px;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
 }
