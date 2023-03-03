@@ -1,4 +1,7 @@
 import React from 'react';
+import InputFile from './InputFile';
+import Checkbox from './Checkbox';
+import TextArea from './TextArea';
 
 class Forms extends React.Component {
     state = {
@@ -8,6 +11,7 @@ class Forms extends React.Component {
         text: '',
         checkbox: 'false',
         file: '',
+        error: 'false',
     }
     
     handleInputText = ({ target }) => {
@@ -45,19 +49,9 @@ class Forms extends React.Component {
                     placeholder='Seu Email' />
                     </fieldset>
                     <fieldset>
-                    <textarea 
-                    name='text'
-                    onChange={this.handleInputText}
-                    value={this.state.text}
-                    />
-                    <input name='file' type="file" 
-                    onChange={this.handleInputText}
-                    value={this.state.file}
-                    />
-                    <input name='checkbox' type="checkbox" 
-                    onChange={this.handleInputText}
-                    value={this.state.checkbox}
-                    />
+                    < TextArea text={this.state.text} handleInputText={this.handleInputText} />
+                    <InputFile file={this.state.file} handleInputText={this.handleInputText} />
+                    <Checkbox checkbox={this.state.checkbox} handleInputText={this.handleInputText}/>
                     </fieldset>
                 </form>
             </div>
