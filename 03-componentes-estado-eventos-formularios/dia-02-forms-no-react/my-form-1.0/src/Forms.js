@@ -6,6 +6,8 @@ class Forms extends React.Component {
         email: '',
         cor: '',
         text: '',
+        checkbox: 'false',
+        file: '',
     }
     
     handleInputText = ({ target }) => {
@@ -20,6 +22,7 @@ class Forms extends React.Component {
         return (
             <div>
                 <form>
+                    <fieldset>
                     <select 
                     onChange={this.handleInputText}
                     value={this.state.cor}
@@ -40,11 +43,22 @@ class Forms extends React.Component {
                     name='email' 
                     type="email" 
                     placeholder='Seu Email' />
+                    </fieldset>
+                    <fieldset>
                     <textarea 
                     name='text'
                     onChange={this.handleInputText}
                     value={this.state.text}
                     />
+                    <input name='file' type="file" 
+                    onChange={this.handleInputText}
+                    value={this.state.file}
+                    />
+                    <input name='checkbox' type="checkbox" 
+                    onChange={this.handleInputText}
+                    value={this.state.checkbox}
+                    />
+                    </fieldset>
                 </form>
             </div>
         )
