@@ -34,6 +34,13 @@
     </div>
     <script>
  
+      const store = createStore(reduce)
+
+      const reduce = (state = INITIAL_STATE, action) => {
+        switch (action.type) {
+          
+        }
+      }
 
       const INITIAL_STATE = {
         colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
